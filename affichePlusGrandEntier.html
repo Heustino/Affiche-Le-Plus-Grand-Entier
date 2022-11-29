@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiche Le Plus Grand Entier</title>
+</head>
+<body>
+
+    <script>
+        // Ecrire un programme qui compare deux nombres, et affiche le plus grand
+        var num1, num2;
+        
+        num1 = window.prompt ("Entrez le premier nombre", "0");
+        num2 = window.prompt ("Entrez le deuxieme nombre", "0");
+
+        if (parseInt(num1, 10) > parseInt(num2, 10)) {
+            document.write("Le plus grand nombre entre "+ num1+ " et "+ num2+ " est "+ num1+ ".");
+        }
+        else {
+            if (parseInt(num2, 10) > parseInt(num1, 10)) {
+                document.write("Le plus grand nombre entre "+ num1+" et "+ num2+ " est "+ num2+ ".");
+            }
+            else {
+                document.write("Les nombres "+ num1+ " et "+num2+ " sont égaux.");
+            }
+        }
+    </script>
+    
+</body>
+</html>
